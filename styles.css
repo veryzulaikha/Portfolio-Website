@@ -23,21 +23,31 @@ a:hover {
     text-decoration: underline;
 }
 
+.button a {
+    font-size: medium;
+}
+
+.button a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .picton {
     color: #2BABDF;
 }
 
-.small {
+.small,
+.small2 {
     font-size: small;
 }
 
 .button {
     width: 10rem;
     height: 2rem;
-    padding-top: 0.4em;
     background-color: #0EA8C5;
     text-align: center;
     border-radius: 20px;
+    align-content: center;
 }
 
 .button:hover {
@@ -115,6 +125,7 @@ nav {
 
 .div5 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -227,6 +238,7 @@ section:nth-of-type(5) {
     height: 40vh;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .div8 {
@@ -295,3 +307,176 @@ footer {
     align-content: center;
 }
 
+@media (max-width: 500px) {
+
+    html,
+    body,
+    footer {
+        overflow-x: hidden;
+        font-size: smaller;
+    }
+
+    section {
+        height: 45vh;
+    }
+
+    section:first-of-type {
+        background-image: url("https://i.imgur.com/i9zNrbY.png");
+        height: 40vh;
+    }
+
+    #div1,
+    #div3 {
+        width: 20%;
+    }
+
+    #div2 {
+        width: 70%;
+    }
+
+    #intro {
+        padding-top: 2em;
+        margin: 0%;
+        height: 22vh;
+        justify-content: space-evenly;
+    }
+
+    #writeup {
+        font-size: 2em;
+        padding: 0em 1em;
+    }
+
+    .button a {
+        font-size: small;
+    }
+
+    section:nth-of-type(2) {
+        height: 160vh;
+    }
+
+    #services {
+        height: 5vh;
+    }
+
+    .div6 {
+        height: 20vh;
+        width: 60%;
+        font-size: xx-small;
+    }
+
+    .div5 {
+        justify-content: space-around;
+    }
+
+    #about {
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0em 0em;
+    }
+
+    #about p {
+        text-align: center;
+    }
+
+    .about1,
+    #about h3,
+    #about p,
+    #about div {
+        margin-bottom: 0.8em;
+
+    }
+
+    #myimg {
+        height: 35vh;
+        width: 70%;
+        position: absolute;
+        left: 15%;
+        bottom: 70%;
+    }
+
+    #section3 {
+        height: 68vh;
+    }
+
+    .work1 {
+        margin-bottom: 5em;
+        justify-content: space-between;
+    }
+
+    .work {
+        width: 50%;
+        font-size: 12px;
+
+    }
+
+    .small2 {
+        font-size: 11px;
+    }
+
+    .workimg {
+        width: 45%;
+    }
+
+    #img1 {
+        background-image: url("https://i.imgur.com/yZtHsBz.png");
+        background-repeat: no-repeat;
+    }
+
+    #img2 {
+        background-image: url("https://i.imgur.com/xcxc62o.png");
+        background-repeat: no-repeat;
+    }
+
+    #img3 {
+        background-image: url("https://i.imgur.com/8q6qqVR.png");
+        background-repeat: no-repeat;
+    }
+
+
+    section:nth-of-type(4) {
+        padding: 0em 1.5em;
+        height: 65vh;
+        margin: 0em 0em;
+    }
+
+    section:nth-of-type(5) {
+        height: 120vh;
+        padding: 0em 1.5em;
+    }
+
+    #centre {
+        padding-top: 3em;
+        margin-bottom: 0em;
+    }
+
+    #div11 {
+        height: 100vh;
+    }
+
+    .div8 {
+        margin: auto;
+        width: 100%;
+        height: 20vh;
+        margin-top: 2em;
+    }
+
+    #div12 {
+        height: 15vh;
+        background-image: url("https://i.imgur.com/bnNAoRy.png");
+    }
+
+    #div13 {
+        height: 18vh;
+    }
+
+    #copyright {
+        height: 10vh;
+    }
+
+    footer {
+        height: 40vh;
+        margin-top: 3em;
+
+    }
+
+}
